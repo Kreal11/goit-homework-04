@@ -24,14 +24,6 @@ ol {
   display: block;
 }
 
-.full-size-page {
-  max-width: 1440px;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .container-header {
   display: flex;
   justify-content: center;
@@ -232,6 +224,11 @@ body {
   max-width: 1440px;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/main/people-office.jpg);
 }
 
 .container-hero {
@@ -290,6 +287,13 @@ body {
 
 .advantages {
   padding: 120px 0;
+}
+
+.advantage-icon-container {
+  margin-bottom: 8px;
+  padding: 24px 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .advantage-item {
@@ -431,6 +435,37 @@ body {
 
 .member {
   margin-bottom: 8px;
+}
+
+/* Customers section */
+
+.customers-title {
+  color: var(--navyblue-color);
+  text-align: center;
+
+  /* Header 2 */
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.customers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 156px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+  gap: 24px;
+}
+
+.customers-item-container {
+  padding: 16px 32px;
 }
 
 /* Body of portfolio  */
