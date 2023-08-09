@@ -47,6 +47,8 @@ main {
   flex-grow: 1;
 }
 
+/* Icons Socials */
+
 /* Hidden Headers  */
 
 .visually-hidden {
@@ -75,6 +77,7 @@ main {
   --cloud-color: #f4f4fd;
   --cornflower: #e7e9fc;
   --lightslate-color: #8e8f99;
+  --green-color: #31d0aa;
 }
 
 /* Header of main page and portfolio  */
@@ -128,10 +131,14 @@ main {
 
 .link:hover {
   color: var(--ocean-hover-focus);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:focus {
   color: var(--ocean-hover-focus);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-navigation {
@@ -156,6 +163,8 @@ main {
 
 .link-navigation:hover {
   color: var(--ocean-hover-focus);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   /* Body Medium */
   font-family: Roboto;
@@ -168,7 +177,8 @@ main {
 
 .link-navigation:focus {
   color: var(--ocean-hover-focus);
-
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* Body Medium */
   font-family: Roboto;
   font-size: 16px;
@@ -176,6 +186,23 @@ main {
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+}
+
+.item-navigation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.current:hover::after {
+  content: "";
+  display: block;
+  border-radius: 2px;
+  background: var(--ocean-hover-focus);
+  width: 67px;
+  height: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Contact information */
@@ -198,10 +225,14 @@ main {
 
 .link-contacts:hover {
   color: var(--ocean-hover-focus);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contacts:focus {
   color: var(--ocean-hover-focus);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-contacts {
@@ -277,10 +308,14 @@ body {
 
 .order-service-button:hover {
   background-color: var(--ocean-hover-focus);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-service-button:focus {
   background-color: var(--ocean-hover-focus);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Advantages and Competences  */
@@ -394,6 +429,9 @@ body {
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .member {
@@ -412,7 +450,6 @@ body {
 .member-position {
   color: var(--slate-color);
   text-align: center;
-
   /* Body */
   font-family: Roboto;
   font-size: 16px;
@@ -439,6 +476,18 @@ body {
 
 .member {
   margin-bottom: 8px;
+}
+
+.member-icons-list {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+.member-icons-item {
+  background-color: var(--iris-color);
+  border-radius: 50%;
+  padding: 12px;
 }
 
 /* Customers section */
@@ -472,6 +521,22 @@ body {
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid var(--lightslate-color);
+}
+
+.customers-logo {
+  fill: var(--lightslate-color);
+}
+
+.customers-logo:hover {
+  fill: var(--ocean-hover-focus);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-logo:focus {
+  fill: var(--ocean-hover-focus);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Body of portfolio  */
@@ -526,12 +591,16 @@ body {
   color: var(--white-color);
   background-color: var(--ocean-hover-focus);
   border: 1px solid transparent;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:focus {
   color: var(--white-color);
   background-color: var(--ocean-hover-focus);
   border: 1px solid transparent;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio cases  */
@@ -545,6 +614,22 @@ body {
 
 .case-item {
   width: calc((100% - 48px) / 3);
+}
+
+.case-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.case-item:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .case-text {
@@ -654,8 +739,26 @@ body {
   margin-bottom: 16px;
 }
 
-.social-footer-list {
+.icons-footer-list {
   list-style-type: none;
   display: flex;
   gap: 16px;
+}
+
+.icons-footer-item {
+  background-color: var(--iris-color);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.icons-footer-item:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--green-color);
+}
+
+.icons-footer-item:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--green-color);
 }
