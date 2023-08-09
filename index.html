@@ -89,9 +89,20 @@ for Your Business"
           <h1 class="main-header-text">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="order-service-button">
+          <button data-modal-open type="button" class="order-service-button">
             Order Service
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+                iste atque, incidunt quaerat esse nemo hic voluptatum id dolores
+                aliquam, consequuntur, architecto harum ratione debitis animi.
+                Ut nisi neque commodi?
+              </p>
+              <button data-modal-close>Закрити</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -494,5 +505,7 @@ for Your Business"
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
