@@ -160,7 +160,7 @@ main {
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
-  padding: 24px 0px 24px 0px;
+  padding: 24px 0px 26px 0px;
   /* display: block; */
 }
 
@@ -202,7 +202,7 @@ main {
   position: absolute;
   left: 0;
   width: 100%;
-  bottom: -3px;
+  bottom: -1px;
   /* top: 100%; */
   border-radius: 2px;
   background-color: var(--ocean-hover-focus);
@@ -554,8 +554,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .customers-item {
@@ -565,24 +563,32 @@ body {
 
 /* Remove div before first link in list and go ahead */
 
-.customers-item-container {
+.customers-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid var(--lightslate-color);
+  color: var(--lightslate-color);
 }
 
 .customers-logo {
-  fill: var(--lightslate-color);
+  fill: currentColor;
 }
 
-.customers-logo:hover {
-  fill: var(--ocean-hover-focus);
+.customers-item-link:hover {
+  color: var(--ocean-hover-focus);
+  border-color: var(--ocean-hover-focus);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-logo:focus {
-  fill: var(--ocean-hover-focus);
+.customers-item-link:focus {
+  color: var(--ocean-hover-focus);
+  border-color: var(--ocean-hover-focus);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -724,7 +730,7 @@ body {
   margin-right: auto;
   justify-content: center;
   flex-direction: column;
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
 .link-logo-footer {
