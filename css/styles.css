@@ -531,6 +531,10 @@ body {
 
 /* Customers section */
 
+.customers {
+  padding: 120px 0px;
+}
+
 .customers-title {
   color: var(--navyblue-color);
   text-align: center;
@@ -547,7 +551,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 15px;
 }
 
 .customers-list {
@@ -573,6 +576,8 @@ body {
   border-radius: 4px;
   border: 1px solid var(--lightslate-color);
   color: var(--lightslate-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-logo {
