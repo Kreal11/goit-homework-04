@@ -331,7 +331,7 @@ body {
 
 .advantage-icon-container {
   margin-bottom: 8px;
-  padding: 24px 100px;
+  padding: 24px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -595,14 +595,6 @@ body {
   padding-bottom: 120px;
 }
 
-.container-portfolio-buttons {
-  padding-top: 96px;
-  padding-bottom: 72px;
-  /* outline: 2px solid tomato; */
-  display: flex;
-  justify-content: center;
-}
-
 .portfolio-buttons-list {
   list-style-type: none;
   display: flex;
@@ -752,7 +744,7 @@ body {
   margin-right: auto;
   justify-content: center;
   flex-direction: column;
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .container-footer {
