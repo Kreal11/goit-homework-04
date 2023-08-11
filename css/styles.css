@@ -264,7 +264,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/main/people-office.jpg);
+    url(../images/main/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -371,7 +371,6 @@ body {
 
 .list-advantages {
   display: flex;
-  margin: 120px 0;
   gap: 24px;
   justify-content: center;
 }
